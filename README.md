@@ -1,8 +1,8 @@
-## WalletShell - GUI wallet for PengolinCoin.
+## WalletElectron - GUI wallet for Avrio.
 
 ### Features:
 
-This wallet contains the basic functions required to manage your PengolinCoin assets:
+This wallet contains the basic functions required to manage your avrio assets:
 
 * Wallet creation:
   * Create new wallet.
@@ -29,15 +29,15 @@ This wallet contains the basic functions required to manage your PengolinCoin as
   * Theme: Dark & Light Mode
   * [Keyboard shortcuts](docs/shortcut.md)
 
-### Download &amp; Run WalletShell
+### Download &amp; Run AvrioWallet
 
 #### Windows:
-1. Download the latest installer here: https://github.com/pengolincoin/pengolin-wallet-electron/releases/latest
+1. Download the latest installer here: https://github.com/avrio-project/avrio-wallet-electron/releases/latest
 2. Run the installer (`walletshell-<version>-win-setup.exe`) and follow the installation wizard.
-3. Launch WalletShell via start menu or desktop shortcut.
+3. Launch AvrioWallet via start menu or desktop shortcut.
 
 #### GNU/Linux (AppImage):
-1. Download latest AppImage bundle here: https://github.com/pengolincoin/pengolin-wallet-electron/releases/latest
+1. Download latest AppImage bundle here: https://github.com/avrio-project/avrio-wallet-electron/releases/latest
 2. Make it executable, either via GUI file manager or command line, e.g. `chmod +x walletshell-<version>-linux.AppImage`
 3. Run/execute the file, double click in file manager, or run via shell/command line (See: https://docs.appimage.org/user-guide/run-appimages.html)
 
@@ -46,14 +46,14 @@ You need to have `Node.js` and `npm` installed, go to https://nodejs.org and fin
 
 Once you have Node+npm installed:
 ```
-# first, download pengolin-service binary for each platform
-# from PengolinCoin official repo
-# https://github.com/pengolincoin/pengolincoin/releases
-# extract the pengolin-service executable somewhere
+# first, download avrio-service binary for each platform
+# from Avrio official repo
+# https://github.com/avrio-project/avrio/releases
+# extract the avrio-service executable somewhere
 
 # clone the repo
-$ git clone https://github.com/pengolincoin/pengolin-wallet-electron
-$ cd pengolin-wallet-electron
+$ git clone https://github.com/avrio-project/avrio-wallet-electron
+$ cd avrio-wallet-electron
 
 # install dependencies
 $ npm install
@@ -66,18 +66,18 @@ $ cp ./src/assets/icon.* ./build/
 
 # build GNU/Linux package
 $ mkdir -p ./bin/lin
-$ cp /path/to/linux-version-of/pengolin-service ./bin/lin/
+$ cp /path/to/linux-version-of/avrio-service ./bin/lin/
 $ npm run dist-lin
 
 # build Windows package
 ### You need Wine if building from Gnu/Linux!
 $ mkdir -p ./bin/win
-$ cp /path/to/win-version-of/pengolin-service.exe ./bin/win/
+$ cp /path/to/win-version-of/avrio-service.exe ./bin/win/
 $ npm run dist-win
 
 # build OSX package
 $ mkdir -p ./bin/osx
-$ cp /path/to/osx-version-of/pengolin-service ./bin/osx/
+$ cp /path/to/osx-version-of/avrio-service ./bin/osx/
 $ npm run dist-mac
 ```
 
@@ -90,3 +90,6 @@ Please visit our wiki page: [WalletShell User Guide](../../wiki).
 Please see [this guide](docs/porting.md) if you want to adapt WalletShell to be use for your own TurtleCoin fork.
 
 ![WalletShell](docs/walletshell.png)
+
+### Thanks
+A bit thanks to both the pengolin and the turtlecoin team fro creating this wallet.
